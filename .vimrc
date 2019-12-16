@@ -15,3 +15,6 @@ let g:ale_linters = { 'cs': ['OmniSharp'] } " Block non-omnisharp linters in ALE
 nnoremap <space><space> :FZF<CR>
 nnoremap <space>f :Ag<CR>
 command! -bang -nargs=* Ag call fzf#vim#ag(<q-args>, {'options': '--delimiter : --nth 4..'}, <bang>0)
+
+" Tab Line
+set wildmenu
